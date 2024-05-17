@@ -1,0 +1,17 @@
+server:
+  port: 4441
+
+spring:
+  application:
+    name: consumermuf
+  kafka:
+    consumer:
+      bootstrap-servers: 10.22.15.158:9092
+      group-id: test
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        specific-avro-reader: true
+    topic:
+      wkwkwk: wkwkwk
